@@ -1,0 +1,10 @@
+const express = require("express");
+const handlebars = require("express-handlebars");
+const app = express();
+app.listen(8080, () => console.log("Server Up on port 8080"));
+app.use(express.static("public"));
+app.use(express.json());
+app.engine("handlebars", handlebars.engine());
+app.set("views", "./views");
+app.set("view engine", "handlebars");
+app.get("/", (req, res) => res.render("home"));
