@@ -1,15 +1,16 @@
-*{
-    margin:0;
+* {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: #000;
     color: yellow;
 
 }
-header{
+
+header {
     display: flex;
     flex-direction: column;
     height: 120px;
@@ -19,14 +20,18 @@ header{
     margin: 1rem;
 
 }
-h1{
+
+h1 {
     font-size: 28px;
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
 }
-main{margin: 1rem;}
 
-footer{
+main {
+    margin: 1rem;
+}
+
+footer {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -36,38 +41,44 @@ footer{
     left: 0;
     text-align: center;
 }
-.addProductForm{
+
+.addProductForm {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
-}
-.inputBox{
-    border-radius: 15px;
-    border: none;
-    outline: 3px#d5d5d5 solid ;
-    width: 250px;
-    margin:1rem;
-    padding:0.5rem;
-}
-.inputBox:hover{
-    outline: 5px#d1d1d1 solid ;
 
 }
-.inputBox:focus{
-background-color: cornsilk;}
-.enviar{
+
+.inputBox {
+    border-radius: 15px;
+    border: none;
+    outline: 3px#d5d5d5 solid;
+    width: 350px;
+    margin: 1rem;
+    padding: 0.5rem;
+}
+
+.inputBox:hover {
+    outline: 5px#d1d1d1 solid;
+
+}
+
+.inputBox:focus {
+    background-color: cornsilk;
+}
+
+.enviar {
     border-radius: 15px;
     background-color: yellow;
     border: none;
-    outline: 3px#d5d5d5 solid ;
-padding: 0.5rem;
-margin:1rem;
-color: dimgrey;
+    outline: 3px#d5d5d5 solid;
+    padding: 0.5rem;
+    margin: 1rem;
+    color: dimgrey;
 }
-.enviar:hover{
-    outline: 5px#d1d1d1 solid ;
-    color:#000
 
+.enviar:hover {
+    outline: 5px#d1d1d1 solid;
+    color: #000
 }

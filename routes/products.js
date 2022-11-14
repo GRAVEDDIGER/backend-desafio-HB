@@ -14,8 +14,13 @@ let upload = multer({ storage: storage });
 const dbManager = new Store("./data.json");
 routes.use(express.json());
 routes.post("/addproduct", upload.single("url"), async (req, res) => {
-  const { title, url, price } = req.body;
-  const response = await dbManager.addProduct(title, url, price, this.version);
+  const { title, price } = req.body;
+  const response = await dbManager.addProduct(
+    title,
+    req.file,
+    price,
+    this.version
+  );
   console.log(req.file);
   res.send(response);
 });
