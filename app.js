@@ -2,6 +2,7 @@ const express = require("express");
 const handlebars = require("express-handlebars");
 const routes = require("./routes/products");
 const app = express();
+
 app.use(express.static("public"));
 app.use(express.json());
 app.use("/", routes);

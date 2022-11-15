@@ -16,8 +16,3 @@ const handleSubmit = async (e, form) => {
   });
   console.log(await response.json());
 };
-addProductForm.addEventListener("submit", (e) => handleSubmit(e, e.target));
-const viewChangeButton = document.getElementById("productsView");
-viewChangeButton.addEventListener("click", async (e) => {
-  const response = await fetch("getProducts", { method: "GET" });
-});
